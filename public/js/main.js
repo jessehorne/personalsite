@@ -4,6 +4,35 @@ var app = {};
 // Variable pre-sets
 app.canUseLocalStorage = false;
 app.tag = "home";
+app.current_favicon = 0;
+app.favicons = [1, 2, 3, 3, 2];
+
+
+app.nextFavicon = function() {
+	if (app.current_favicon < app.favicons.length-1) {
+		app.current_favicon += 1;
+	} else {
+		app.current_favicon = 0;
+	}
+
+	document.head || (document.head = document.getElementsByTagName('head')[0]);
+
+	var link = document.createElement("link");
+	var old_link = document.getElementById("old-favicon");
+
+	link.id = "old-favicon";
+	link.rel = "shortcut icon";
+	link.href = "/images/favicon_0" + app.favicons[app.current_favicon] + ".ico";
+
+	console.log(app.current_favicon, app.favicons[app.current_favicon]);
+	console.log("/images/favicon_0" + app.favicons[app.current_favicon] + ".ico");
+
+	if (old_link) {
+		document.head.removeChild(old_link);
+	}
+
+	document.head.appendChild(link);
+}
 
 
 app.setTag = function(tag_name) {
@@ -31,6 +60,10 @@ app.setTag = function(tag_name) {
 
 
 app.onload = function() {
+	// Handle favicon changing
+	setInterval(app.nextFavicon, 1000);
+
+	// Can use localStorage?
 	if (localStorage) {
 		app.canUseLocalStorage = true;
 	}
