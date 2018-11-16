@@ -34,6 +34,7 @@
 	</div>
 
 	<div id="section-contact" class="section section-contact">
+		<div class="section-header">Contact</div>
 		<form method="POST" action="https://formspree.io/j.horne2796@gmail.com">
 			<input type="email" name="email" placeholder="Email"><br>
 			<textarea name="message" placeholder="Message"></textarea><br>
