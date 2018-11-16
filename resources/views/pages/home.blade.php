@@ -13,7 +13,7 @@
 	</div>
 
 	<div id="section-portfolio" class="section section-portfolio">
-		<div class="section-header">Previous Clients</div>
+		<div class="section-header">Portfolio</div>
 		<div class="section-clients">
 			<div class="section-client">
 				<a href="http://binarycocoa.com/">
@@ -23,6 +23,11 @@
 			<div class="section-client">
 				<a href="https://brightlightconstructionsolutions.com/">
 					<img id="bl-client" src="/images/bl.png">
+				</a>
+			</div>
+			<div class="section-client">
+				<a href="https://quarrymill.com/wp-content/themes/theme-thequarrymill/dist/images/logo-thequarrymill.png">
+					<img id="qm-client" src="https://quarrymill.com/wp-content/themes/theme-thequarrymill/dist/images/logo-thequarrymill.png">
 				</a>
 			</div>
 		</div>

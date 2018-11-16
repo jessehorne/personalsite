@@ -329,8 +329,12 @@ p {
 }
 
 #bl-client {
-	margin-top: 60px;
+	margin-top: 65px;
 	margin-left: 0px;
+}
+
+#qm-client {
+	margin-top: 22.5px;
 }
 
 .view-source {
