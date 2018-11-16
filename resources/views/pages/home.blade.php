@@ -1,6 +1,8 @@
 @extends('pages.layout')
 
 @section('content')
+	<div class="view-source"><a href="https://github.com/jessehorne/personalsite">view source</a></div>
+
 	<div id="section-home" class="section section-home">
 		<div class="section-banner">My name is <b>Jesse</b>. I'm a self-taught developer who likes to build <i>things</i>.</div>
 	</div>

@@ -332,3 +332,21 @@ p {
 	margin-top: 60px;
 	margin-left: 0px;
 }
+
+.view-source {
+	position: fixed;
+	top: 5px;
+	font-size: 12px;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.view-source a {
+	color: white;
+	text-decoration: none;
+}
+
+.view-source a:hover {
+	border-bottom: 1px solid white;
+}
