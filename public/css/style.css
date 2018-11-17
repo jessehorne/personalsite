@@ -27,33 +27,37 @@ p {
 }
 
 .navbar {
-	width: auto;
-	height: 5vw;
+	position: absolute;
+	width: 100%;
+	height: 100px;
 	color: grey;
-	line-height: 5vw;
-	padding-top: 5vw;
-	padding-left: 5vw;
+	line-height: 10vh;
+	background-color: black;
+	display: inline;
+	padding-left: 40px;
+	z-index: 10;
 }
 
 .nav-brand {
-	font-size: 2em;
+	font-size: 1em;
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+	text-align: center;
 }
 
 .nav-brand-sub {
-	font-size: 2em;
+	font-size: 1em;
 	color: rgb(100, 100, 200);
 	letter-spacing: 5px;
 	text-decoration: none;
-	margin-left: 2vw;
+	text-align: center;
+	padding-left: 20px;
 }
 
 .nav-items {
 	float: right;
-	width: auto;
-	padding-right: 5vw;
+	padding-right: 40px;
 }
 
 .nav-items a {
@@ -62,8 +66,7 @@ p {
 	transition: color 0.3s ease;
 	text-decoration: none;
 	font-weight: 500;
-	margin-left: 1em;
-	padding-bottom: 5px;
+	margin-right: 30px;
 }
 
 .nav-items a:hover {
@@ -78,10 +81,12 @@ p {
 }
 
 .content {
+	position: relative;
 	width: 100%;
 	height: 90vh;
 	padding-left: 10px;
 	padding-right: 20px;
+	margin-top: 150px;
 	overflow-y: scroll;
 }
 
@@ -91,6 +96,7 @@ p {
 	height: 500px;
 	z-index: 1;
 	font-weight: 50;
+	margin-top: 100px;
 }
 
 .section-home {
@@ -102,7 +108,11 @@ p {
 }
 
 .section-portfolio {
+	height: 300px;
+}
 
+.section-contact {
+	margin-bottom: 150px;
 }
 
 .section-contact .section-header {
@@ -113,8 +123,8 @@ p {
 .section-contact form {
 	width: 40vw;
 	margin: auto;
-	padding: 10px;
 	margin-top: 20px;
+	padding: 10px;
 	-webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -126,7 +136,7 @@ p {
 	padding: 10px;
 	font-size: 24px;
 	background-color: black;
-	border: none !important;
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	color: white;
 }
 
@@ -142,11 +152,13 @@ p {
 	width: 100%;
 	height: 200px;
 	margin: 0;
+	margin-top: 20px;
 	padding: 10px;
 	font-size: 24px;
 	background-color: black;
-	border: none !important;
 	color: white;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	resize: none;
 }
 
 .section-contact form textarea::placeholder {
@@ -157,9 +169,17 @@ p {
 	outline-width: 0;
 }
 
+.form-button {
+	width: 200px;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	margin-top: 50px;
+}
+
 .section-contact form button {
 	width: 100%;
-	margin: 0;
+	margin: auto;
 	padding: 10px;
 	font-size: 24px;
 	background-color: black;
@@ -174,10 +194,6 @@ p {
 	transition: color 0.3s ease;
 	background-color: white;
 	transition: background-color 0.3s ease;
-}
-
-.section-contact form button::placeholder {
-	color: white;
 }
 
 .section-contact form button:focus {
@@ -354,4 +370,67 @@ p {
 
 .view-source a:hover {
 	border-bottom: 1px solid white;
+}
+
+/* For desktop: */
+.col-1 {display: inline; width: 8.33%;}
+.col-2 {display: inline; width: 16.66%;}
+.col-3 {display: inline; width: 25%;}
+.col-4 {display: inline; width: 33.33%;}
+.col-5 {display: inline; width: 41.66%;}
+.col-6 {display: inline; width: 50%;}
+.col-7 {display: inline; width: 58.33%;}
+.col-8 {display: inline; width: 66.66%;}
+.col-9 {display: inline; width: 75%;}
+.col-10 {display: inline; width: 83.33%;}
+.col-11 {display: inline; width: 91.66%;}
+.col-12 {display: inline; width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    .nav-items {
+		width: 100%;
+		background-color: black;
+		z-index: 10;
+	}
+
+	.nav-item {
+		width: 100% !important;
+		display: block;
+		line-height: 30px;
+		padding-left: 20px;
+	}
+
+	.navbar {
+		position: absolute;
+	}
+
+	.content {
+	}
+
+	.section {
+		margin-top: 300px;
+	}
+
+	.section-home {
+		margin-top: 500px;
+	}
+
+	.section-portfolio {
+		position: relative;
+		margin-top: 700px;
+	}
+
+	.section-contact {
+		margin-top: 600px;
+	}
+
+	.section-contact form {
+		width: 100%;
+	}
+
+	.footer {
+		position: fixed;
+		bottom: 0px;
+		background-color: black;
+	}
 }

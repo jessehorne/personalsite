@@ -1,7 +1,9 @@
 @extends('pages.layout')
 
 @section('content')
-	<div class="view-source"><a href="https://github.com/jessehorne/personalsite">view source</a></div>
+	<div class="view-source">
+		<a href="https://github.com/jessehorne/personalsite">view source</a>
+	</div>
 
 	<div id="section-home" class="section section-home">
 		<div class="section-banner">My name is <b>Jesse</b>. I'm a self-taught developer who likes to build <i>things</i>.</div>
@@ -38,7 +40,7 @@
 		<form method="POST" action="https://formspree.io/j.horne2796@gmail.com">
 			<input type="email" name="email" placeholder="Email"><br>
 			<textarea name="message" placeholder="Message"></textarea><br>
-			<button type="submit">Contact</button>
+			<div class="form-button"><button type="submit">Contact</button></div>
 		</form>
 	</div>
 @endsection
