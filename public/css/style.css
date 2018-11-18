@@ -6,7 +6,6 @@ html, body {
 	font-family: 'Questrial', sans-serif;
 	font-size: 14px;
 	background-color: black;
-	overflow: hidden;
 	letter-spacing: 1px;
 }
 
@@ -27,19 +26,16 @@ p {
 }
 
 .navbar {
-	position: absolute;
-	width: 100%;
-	height: 100px;
+	height: 2em;
 	color: grey;
-	line-height: 10vh;
-	background-color: black;
-	display: inline;
-	padding-left: 40px;
+	line-height: 2em;
 	z-index: 10;
+	margin: 0;
+	padding: 20px 40px 20px;
 }
 
 .nav-brand {
-	font-size: 1em;
+	font-size: 2em;
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
@@ -47,7 +43,7 @@ p {
 }
 
 .nav-brand-sub {
-	font-size: 1em;
+	font-size: 2em;
 	color: rgb(100, 100, 200);
 	letter-spacing: 5px;
 	text-decoration: none;
@@ -57,7 +53,6 @@ p {
 
 .nav-items {
 	float: right;
-	padding-right: 40px;
 }
 
 .nav-items a {
@@ -83,20 +78,17 @@ p {
 .content {
 	position: relative;
 	width: 100%;
-	height: 90vh;
 	padding-left: 10px;
 	padding-right: 20px;
-	margin-top: 150px;
-	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 .section {
 	width: 90%;
 	margin: auto;
-	height: 500px;
 	z-index: 1;
 	font-weight: 50;
-	margin-top: 100px;
+	padding-bottom: 100px;
 }
 
 .section-home {
@@ -109,64 +101,6 @@ p {
 
 .section-portfolio {
 	height: 300px;
-}
-
-.section-contact {
-	margin-bottom: 150px;
-}
-
-.section-contact .section-header {
-	width: 100%;
-	margin: auto;
-}
-
-.section-contact form {
-	width: 40vw;
-	margin: auto;
-	margin-top: 20px;
-	padding: 10px;
-	-webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-.section-contact form input {
-	width: 100%;
-	margin: 0;
-	padding: 10px;
-	font-size: 24px;
-	background-color: black;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	color: white;
-}
-
-.section-contact form input::placeholder {
-	color: white;
-}
-
-.section-contact form input:focus {
-	outline-width: 0;
-}
-
-.section-contact form textarea {
-	width: 100%;
-	height: 200px;
-	margin: 0;
-	margin-top: 20px;
-	padding: 10px;
-	font-size: 24px;
-	background-color: black;
-	color: white;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	resize: none;
-}
-
-.section-contact form textarea::placeholder {
-	color: white;
-}
-
-.section-contact form textarea:focus {
-	outline-width: 0;
 }
 
 .form-button {
@@ -201,15 +135,12 @@ p {
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
-	height: 10vh;
 	color: white;
-	font-size: 14px;
+	font-size: 18px;
+	line-height: 50px;
 	margin: 0;
-	padding: 0;
-	line-height: 10vh;
+	padding: 10px;
 	z-index: 3;
 	background-color: rgba(0, 0, 0, 0.8);
 }
@@ -218,7 +149,6 @@ p {
 	position: absolute;
 	left: 0px;
 	width: 40%;
-	height: 100%;
 	margin: 0;
 	padding-left: 40px;
 }
@@ -227,7 +157,6 @@ p {
 	position: absolute;
 	right: 0px;
 	width: 40%;
-	height: 100%;
 	margin: 0;
 	padding-right: 40px;
 	text-align: right;
@@ -240,7 +169,6 @@ p {
 	font-size: 32px;
 	color: white;
 	transition: color 0.3s ease;
-	line-height: 5vh;
 }
 
 .footer-right a i:hover {
@@ -252,21 +180,26 @@ p {
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
-	line-height: 5vh;
+	line-height: 20px;
 }
 
 .footer a:hover {
 	text-decoration: none;
 }
 
+.footer-email {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+}
+
 .section-banner {
 	font-size: 64px;
 	width: 70vw;
-	height: 100%;
 	/* border: 2px solid white; */
 	z-index: 5 !important;
 	margin: auto;
-	padding-top: 20vh;
+	padding-top: 40px;
 	color: white;
 	text-align: center;
 }
@@ -287,7 +220,6 @@ p {
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 	text-transform: uppercase;
-	margin-bottom: 40px;
 }
 
 .section-header:hover {
@@ -356,11 +288,13 @@ p {
 
 .view-source {
 	position: fixed;
-	top: 5px;
-	font-size: 12px;
+	font-size: 18px;
+	line-height: 18px;
 	color: white;
 	width: 100%;
 	text-align: center;
+	background-color: black;
+	z-index: 11;
 }
 
 .view-source a {
@@ -387,50 +321,115 @@ p {
 .col-12 {display: inline; width: 100%;}
 
 @media only screen and (max-width: 768px) {
-    .nav-items {
+	.navbar {
+		padding: 10px 20px 10px;
+	}
+
+    .nav-brand {
+		width: 50%;
+		font-size: 1.5em;
+	}
+
+	.nav-brand-sub {
+		width: 50%;
+		font-size: 1.5em;
+		letter-spacing: 3px;
+	}
+
+	.nav-items {
+		position: inherit;
 		width: 100%;
-		background-color: black;
-		z-index: 10;
+		margin: 0;
+		padding: 0;
+		text-align: right;
 	}
 
 	.nav-item {
-		width: 100% !important;
+		width: 100%;
+		float: none;
 		display: block;
-		line-height: 30px;
-		padding-left: 20px;
+		margin: 10px;
+		padding: 0;
 	}
 
-	.navbar {
-		position: absolute;
-	}
-
-	.content {
+	.section-banner {
+		font-size: 1.5em;
+		padding-top: 5vh;
 	}
 
 	.section {
-		margin-top: 300px;
+		width: 90% !important;
+		margin: auto;
+	}
+
+	.section-text {
+		width: 90% !important;
+		margin: auto;
 	}
 
 	.section-home {
-		margin-top: 500px;
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	.section-about {
+		margin-top: 0;
+		padding-bottom: 100px;
 	}
 
 	.section-portfolio {
-		position: relative;
-		margin-top: 700px;
+		height: auto;
+		padding-bottom: 200px;
 	}
 
-	.section-contact {
-		margin-top: 600px;
+	.section-header:hover {
+		width: 80vw;
 	}
 
-	.section-contact form {
+	.view-source {
+		background-color: black;
+		position: inherit;
 		width: 100%;
+		height: 20px;
+		font-size: 18px;
+		line-height: 18px;
+		margin: 0;
+		padding: 10px;
 	}
 
 	.footer {
-		position: fixed;
-		bottom: 0px;
-		background-color: black;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.footer-left {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.footer-right {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.footer a {
+		margin: 0;
+		padding: 0;
+		margin-left: 20px;
+	}
+
+	.footer a i {
+		margin: 0;
+		padding: 0;
 	}
 }

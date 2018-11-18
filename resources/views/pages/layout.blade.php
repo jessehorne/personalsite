@@ -22,6 +22,10 @@
 
 	</head>
 	<body>
+		<div class="view-source">
+			<a href="https://github.com/jessehorne/personalsite">view source</a>
+		</div>
+
 		<div class="navbar">
 			<a class="nav-brand" href="/">Jesse Horne</a>
 			<a class="nav-brand-sub" href="/">Web Developer</a>
@@ -39,7 +43,7 @@
 		</div>
 
 		<div class="footer">
-			<div class="footer-left">&copy; 2018 Jesse Horne</div>
+			<div class="footer-email">me@jesseh.xyz</div>
 
 			<div class="footer-right">
 				<a href="https://github.com/jessehorne"><i class="fab fa-github-square"></i></a>
@@ -47,6 +51,8 @@
 				<a href="https://medium.com/@jessehorne"><i class="fab fa-medium"></i></a>
 				<a href="https://buymeacoff.ee/sY6gmcx"><i class="fas fa-coffee"></i></a>
 			</div>
+
+			<div class="footer-left">&copy; 2018 Jesse Horne</div>
 		</div>
 
 		<script src="/js/main.js"></script>
