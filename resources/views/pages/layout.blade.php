@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>Jesse Horne Web Portfolio</title>
 
 		<link rel="icon" id="old-favicon" href="/images/favicon_01.ico">
@@ -26,18 +28,6 @@
 			<a href="https://github.com/jessehorne/personalsite">view source</a>
 		</div>
 
-		<div class="navbar">
-			<a class="nav-brand" href="/">Jesse Horne</a>
-			<a class="nav-brand-sub" href="/">Web Developer</a>
-
-			<div class="nav-items">
-				<a id="home" class="nav-item" href="#home">Home</a>
-				<a id="about" class="nav-item" href="#about">About</a>
-				<a id="portfolio" class="nav-item" href="#portfolio">Portfolio</a>
-				<a id="contact" class="nav-item" href="#contact">Contact</a>
-			</div>
-		</div>
-
 		<div class="content">
 			@yield('content')
 		</div>
@@ -54,7 +44,5 @@
 
 			<div class="footer-left">&copy; 2018 Jesse Horne</div>
 		</div>
-
-		<script src="/js/main.js"></script>
 	</body>
 </html>
